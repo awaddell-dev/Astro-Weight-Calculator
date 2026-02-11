@@ -2,6 +2,11 @@
 
 A client-side web application that calculates your weight on different planets using relative gravitational values. Built as part of the CCC Web 102 curriculum, this project demonstrates core front-end skills using vanilla web technologies.
 
+## Live Demo
+
+View the live project here:  
+https://awaddell-dev.github.io/Astro-Weight-Calculator/
+
 ---
 
 ## Features
