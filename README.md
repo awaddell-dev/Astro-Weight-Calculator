@@ -74,7 +74,6 @@ A client-side web application that calculates your weight on different planets u
 * Add more celestial bodies
 * Improve mobile responsiveness
 * Add unit tests
-* Deploy live using GitHub Pages
 
 ---
 
