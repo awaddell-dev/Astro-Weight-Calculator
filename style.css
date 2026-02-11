@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+  padding: 28px;
+
+  background: radial-gradient(circle at top, #1b2440 0%,  #060814 55%, #02030a 100%);
+  color: #e9ecff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Space Grotesk";
+    
+  gap: 14px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  pointer-events: none;
+  inset: 0;
+    
+  background:
+  radial-gradient(circle, rgba(255,255,255,0.12) 1px,  transparent 1.6px) 0 0 / 120px 120px,
+  radial-gradient(circle, rgba(255,255,255,0.10) 1px,  transparent 1.6px) 40px 60px / 160px 160px;
+
+  opacity: 0.55;
+
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  letter-spacing: 0.6px;
+}
+
+/* Make the label behave like a block and align text nicely */
+label {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+  text-align: center;
+  color: rgba(233, 236, 255, 0.9);
+  font-size: 0.95rem;
+
+  /* “card” wrapper feel */
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 18px;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+}
+
+#planets {
+  width: 75%;
+  margin-top: 10px;
+  text-align: center;
+  text-align-last: center;
+
+  padding-left: 40px;
+  padding-right: 30px;
+
+  border-radius: 12px;
+  border: 1px solid #f58ed3;
+
+  background: rgba(0, 0, 0, 0.28);
+  color: #e9ecff;
+
+  outline: none;
+}
+
+#user-weight {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 14px;
+  text-align: center;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  background: rgba(0, 0, 0, 0.28);
+  color: #e9ecff;
+
+  outline: none;
+}
+
+#user-weight::placeholder {
+  color: rgba(233, 236, 255, 0.55);
+  text-align: center;
+}
+
+#user-weight:focus,
+#planets:focus {
+  border-color: rgba(135, 165, 255, 0.6);
+  box-shadow: 0 0 0 3px rgba(135, 165, 255, 0.2);
+}
+
+/* Button */
+#calculate-button {
+  width: 100%;
+  max-width: 520px;
+  
+  text-align: center;
+
+  padding: 12px 14px;
+  border: none;
+  border-radius: 12px;
+
+  color: #0b1022;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+
+  background: linear-gradient(90deg, #79a6ff, #9b7dff, #ff7fd4);
+
+  cursor: pointer;
+  transition: transform 0.08s ease, filter 0.15s ease;
+}
+
+#calculate-button:hover {
+  filter: brightness(1.05);
+}
+
+#calculate-button:active {
+  transform: translateY(1px);
+}
+
+/* Output panel */
+#output {
+  width: 100%;
+  max-width: 520px;
+
+  margin: 6px 0 0;
+  padding: 14px 14px;
+
+  border-radius: 12px;
+  border: 1px solid #79a6ff;
+
+  background: rgba(0, 0, 0, 0.22);
+  color: rgba(233, 236, 255, 0.95);
+
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Small screen spacing */
+@media (max-width: 520px) {
+  body {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
